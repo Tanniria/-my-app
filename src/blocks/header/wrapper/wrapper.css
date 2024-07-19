@@ -1,6 +1,7 @@
 .menus {
   display: flex;
   list-style: none;
+  margin: 0;
 }
 .menu-items {
   margin-right: 15px;
