@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-
+  box-shadow: 1px 5px 16px rgb(43, 43, 43);
   background: #232323;
 
   display: flex;
@@ -8,8 +8,7 @@
   align-items: center;
 
   .box {
-    width: 250px;
-    height: 250px;
+    height: 100px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -21,10 +20,12 @@
       display: flex;
       align-items: center;
       height: 50px;
+      justify-content: center;
 
       .block {
         width: 0%;
         height: inherit;
+        
         background: #ffb510;
         position: absolute;
         animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
@@ -77,6 +78,7 @@
         width: 0%;
         height: inherit;
         background: #e91e63;
+        background: #bb4f43;
         position: absolute;
         animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
         animation-delay: 2s;

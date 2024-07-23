@@ -19,7 +19,7 @@ export default function Section() {
           </div>
         </div>
       </div>
-      <div className="title-container">
+      {/* <div className="title-container">
         <div className="box">
           <div className="main__subtitle">
             <span className="main__block"></span>
@@ -28,7 +28,7 @@ export default function Section() {
             </h1>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
