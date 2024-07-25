@@ -1,0 +1,136 @@
+.card-carousel {
+    --card-width: 100%;
+    --card-max-width: 450px;
+    --card-height: 600px;
+    --carousel-min-width: 600px;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: var(--card-height);
+    min-width: var(--carousel-min-width);
+    transition: filter 0.3s ease;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .card-carousel {
+      margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2);
+    }
+  }
+  
+  .card-carousel.smooth-return {
+    transition: all 0.2s ease;
+  }
+  
+  .card-carousel .card {
+    background: whitesmoke;
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    text-align: center;
+    padding: 1em;
+    min-width: 250px;
+    height: var(--card-height);
+    position: absolute;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.5);
+    transition: inherit;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+    filter: brightness(0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #7a7a7a;
+  }
+  
+  .card.highlight {
+    filter: brightness(1);
+  }
+  
+  /* .card:nth-of-type(1) .image-container {
+    background-image: url("/img/Ф.Р-490\,\ Оп.3\,\ Д.52\,\ Л.1_Петр\ Иванович\ Сумин\ \(21.06.1946\,\ с.\ Верхняя\ Санарка\ Троицкого\ района\).\ Партийный\ и\ государственный\ деятель\,\ Губернатор\ Челябинской\ области\,\ 2004.png");
+  }
+  
+  .card:nth-of-type(2) .image-container {
+    background-image: url("/img/Ф.П-3298\,\ Оп.4\,\ Д.15\,\ Л.24_Рапорт\ Челябинского\ ордена\ Ленина\ электрометаллургического\ комбината\ по\ итогам\ выполнения\ социалистических\ обязательств\ в\ честь\ 100-летия\ со\ дня\ рождения\ В.\ И.\ Ленина.\ Электродный\ завод\,\ 1935.jpg");
+  }
+  
+  .card:nth-of-type(3) .image-container {
+    background-image: url("/img/Ф.П-695\,\ Оп.6\,\ Д.1562\,\ Л.1_Директор\ Козыревского\ среднего\ сельского\ профессионально-технического\ училища\ №\ 12\ В.\ Конобеев\ с\ учащимися\ на\ поле\ учебного\ хозяйства\,\ 08.1978.jpg");
+  }
+  .card:nth-of-type(4) .image-container {
+    background-image: url("/img/Ф.Р-1282\,\ Оп.5\,\ Д.91\,\ Л.1_Автомобиль\ КамАЗ\ централизованного\ отряда\ автотранспортников\ Южноуральска\ и\ Коркино\ на\ пробоотборнике\ Увельского\ элеватора.\ Вид\ 1\,\ 21.09.1983.jpg");
+  }
+  .card:nth-of-type(5) .image-container {
+    background-image: url("/img/Ф.Р-1212\,\ Оп.2\,\ Д.467\,\ Л.1_Фотографии\ Озерска\ и\ химкомбината\ «Маяк»\,\ подобранные\ В.В.\ Новоселовым\ для\ первого\ издания\ книги\ «Тайна\ «сороковки»\ .\ Пионеры\ –\ учащиеся\ школы\ №\ 22\,\ во\ время\ урока\,\ 1994.jpg");
+  }
+  .card:nth-of-type(6) .image-container {
+    background-image: url("/img/Ф.П-3298\,\ Оп.2\,\ Д.1302\,\ Л.1_Заведующая\ кафедрой\ госпитальной\ педиатрии\ Челябинского\ медицинского\ института\ профессор\ Н.\ С.\ Тюрина\ в\ реанимационном\ отделении\ детской\ городской\ больницы\,\ 1981.jpg");
+  }
+  .card:nth-of-type(7) .image-container {
+    background-image: url("/img/Ф.П-288К\,\ Оп.4\,\ Д.20\,\ Л.40_Альбом\ фотографий\ о\ строительстве\ и\ благоустройстве\ г.\ Челябинска.\ 1949\ год.\ Зрительный\ зал\ Дворца\ культуры\ им.\ С.\ Орджоникидзе\ на\ 850\ мест.\,\ 1949.jpg");
+  }
+  .card:nth-of-type(8) .image-container {
+    background-image: url("/img/Ф.П-695\,\ Оп.6\,\ Д.1562\,\ Л.1_Директор\ Козыревского\ среднего\ сельского\ профессионально-технического\ училища\ №\ 12\ В.\ Конобеев\ с\ учащимися\ на\ поле\ учебного\ хозяйства\,\ 08.1978.jpg");
+  }
+  .card:nth-of-type(9) .image-container {
+    background-image: url("/img/Ф.Р-1282\,\ Оп.8\,\ Д.583\,\ Л.4_Фоторепортаж\ «Мы\ и\ природа».\ Уникальное\ озеро\ Песчаное\ превращается\ в\ болото\,\ 18.08.1987.png");
+  } */
+  
+  .image-container {
+    width: 18em;
+    height: 18em;
+    position: relative;
+    background-size: cover;
+    margin-bottom: 2em;
+    border-radius: 100%;
+    padding: 1em;
+    -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+  .image-container::after {
+    content: "";
+    display: block;
+    width: 120%;
+    height: 120%;
+    border: solid 3px rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+    position: absolute;
+    top: calc(-10% - 3px);
+    left: calc(-10% - 3px);
+  }
+  .image-container__name {
+    font-size: 24px;
+  }
+  
+  .footer {
+    margin-left: 70px;
+    height: 100px;
+    background: rgb(53, 52, 50);
+    
+  }
+  .footer__text {
+    margin: 0;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    color: #cbcbcb;
+  }
+  
+  .leader {
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+  }
