@@ -19,7 +19,7 @@ export default function Section() {
           </div>
         </div>
       </div>
-      <div class="main-container">
+      {/* <div class="main-container">
         <div class="card-carousel">
           <div class="card" id="1">
             <div class="image-container"></div>
@@ -52,17 +52,8 @@ export default function Section() {
             <p class="image-container__name">Культура</p>
           </div>
         </div>
-      </div>
-      {/* <div className="title-container">
-        <div className="box">
-          <div className="main__subtitle">
-            <span className="main__block"></span>
-            <h1>
-              РАЗДЕЛЫ<span></span>
-            </h1>
-          </div>
-        </div>
       </div> */}
+      
     </div>
   );
 }

@@ -9,7 +9,7 @@ export const menuItemsData = [
     submenu: [
       {
         title: "Становление Челябинской области",
-        url: "history",
+        url: "about",
       },
       {
         title: "Руководители",

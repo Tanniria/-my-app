@@ -1,19 +1,41 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Dropdown from "./Dropdown";
 
 const MenuItems = ({ items }) => {
   const [dropdown, setDropdown] = useState(false);
-
-
+  let ref = useRef();
+  useEffect(() => {
+    const handler = (event) => {
+      if (dropdown && ref.current && !ref.current.contains(event.target)) {
+        setDropdown(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    document.addEventListener("touchstart", handler);
+    return () => {
+      // Cleanup the event listener
+      document.removeEventListener("mousedown", handler);
+      document.removeEventListener("touchstart", handler);
+    };
+  }, [dropdown]);
   const closeDropdown = () => {
     dropdown && setDropdown(false);
+  };
+  const onMouseEnter = () => {
+    setDropdown(true);
+  };
+
+  const onMouseLeave = () => {
+    setDropdown(false);
   };
   return (
     <li
       className="menu-items"
-
       onClick={closeDropdown}
-      >
+      ref={ref}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
       {items.submenu ? (
         <>
           <button

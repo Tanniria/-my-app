@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React from 'react'
 import Popup from './Popup';
 
 export default function EditProfilePopup({ isOpen, onClose }) {

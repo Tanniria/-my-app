@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Header from "./Header";
+import { Routes, Route } from "react-router-dom";
+
 import Main from "./Main";
 import PopupHistory from "./Popup";
 import Section from "./Section";
@@ -17,14 +18,13 @@ export default function App() {
 
   function handlePopupClick() {
     setPopupOpen(true);
-  };
+  }
   function closeAllPopups() {
     setPopupOpen(false);
-  };
+  }
 
   return (
     <div className="page">
-      <Header />
       <Main onOpenPopup={handlePopupClick} />
       <Section />
       <PopupHistory isOpen={isPopupOpen} onClose={closeAllPopups} />
