@@ -1,19 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
 
 import Main from "./Main";
 import PopupHistory from "./Popup";
 import Section from "./Section";
 
 export default function App() {
-  // const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
-  // const [selectedCard, setSelectedCard] = useState({});
-
-  // function handleCardClick(card) {
-  //     setSelectedCard(card);
-  //     setIsImagePopupOpen(true);
-  // };
-
   const [isPopupOpen, setPopupOpen] = useState(false);
 
   function handlePopupClick() {

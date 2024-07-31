@@ -1,0 +1,20 @@
+.popup_img {
+  background: rgba(0, 0, 0, 0.9);
+}
+.popup__container-img {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.popup__img-zoom {
+  display: block;
+  max-width: 75vw;
+  max-height: 75vh;
+}
+.popup__img-title {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin: 10px 0 0 0;
+  color: #fff;
+}

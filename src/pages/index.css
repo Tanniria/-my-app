@@ -15,4 +15,5 @@
 @import url('../blocks/main/__sections/main__sections.css');
 @import url('../blocks/main/__sections/main__subtitle.scss');
 @import url('../blocks/сarousel/carousel.css');
-@import url('../blocks/about/about.css');
+@import url('../blocks/sections/sections.css');
+@import url('../blocks/popup/_img/popup_image.css');
